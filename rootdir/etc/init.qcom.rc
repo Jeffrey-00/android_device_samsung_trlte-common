@@ -1365,6 +1365,7 @@ service olsrd /system/bin/olsrd -f /etc/wifi/olsrd.conf
     class main
     disabled
     oneshot
+    seclabel u:r:macloader:s0
 
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
     class late_start
