@@ -27,6 +27,10 @@ ENABLE_CPUSETS := true
 # L1/L2 cache size parameters by @JustArchi
 BOARD_GLOBAL_CFLAGS := --param l1-cache-size=32 --param l1-cache-line-size=16 --param l2-cache-size=2048
 
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG := true
+
+
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
