@@ -1,0 +1,8 @@
+#============= mediadrmserver ==============
+allow mediadrmserver firmware_file:dir search;
+
+#============= priv_app ==============
+allow priv_app device:dir read;
+
+#============= vcs ==============
+allow vcs ion_device:chr_file read; 
