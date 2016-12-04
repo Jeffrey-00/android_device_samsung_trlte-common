@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.apq8084 \
     libstlport \
+    camera2 \
     libxml2
 
 # Charger
