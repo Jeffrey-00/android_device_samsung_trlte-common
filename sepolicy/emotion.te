@@ -27,6 +27,10 @@ allow priv_app device:dir open;
 #============= rild ==============
 allow rild default_prop:property_service set;
 
+#============= shell ==============
+allow shell dalvikcache_data_file:dir write;
+allow shell self:capability dac_override;
+
 #============= sensorhubservice ==============
 allow sensorhubservice device:chr_file { read write };
 allow sensorhubservice sysfs:file { read write };
@@ -35,6 +39,7 @@ allow sensorhubservice sysfs:file open;
 
 #============= system_server ==============
 allow system_server unlabeled:file unlink;
+allow system_server sensors_efs_file:file read;
 
 #============= thermal-engine ==============
 allow thermal-engine self:netlink_kobject_uevent_socket create;
