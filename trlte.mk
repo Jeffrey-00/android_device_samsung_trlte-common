@@ -118,6 +118,10 @@ PRODUCT_PACKAGES += \
     libstlport \
     libxml2
 
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
